@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>your number is</title>
+{% endblock %}
+{% block body %}
+<div class="wrapper index">
+    <h2>あなたの思い浮かべた数字は</h2>
+    <p class="your_number">{{ your_number }}
+        <span class="your_number-cover">・・・</span>
+    </p>
+    <a href="{{ url_for('index') }}" class="btn btn--orange btn--cubic btn--shadow">RETURN</a>
+</div>
+{% endblock %}

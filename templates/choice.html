@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="/static/radio-style.css">
+<title>select</title>
+{% endblock %}
+{% block body %}
+<div class="wrapper">
+    <h2 class="ttl">この中に選んだ数字はありますか？</h2>
+    <form class="input_form" action="{{ url_for('strage') }}" method="POST">
+        <div class="number-container">
+            {% for b in bord._nums %}
+            <p class="each-number">{{ b }}</p>
+            {% endfor %}<br>
+        </div>
+        <div class="radio-container">
+            <ul>
+                <li class="radio_li">
+                    <label class="Radio">
+                    <input name="selector" class="Radio-Input" type="radio" value="yes" required>
+                    <span class="Radio-Text">YES</span>
+                    </label>
+                </li>
+                <li  class="radio_li">
+                    <label class="Radio">
+                        <input name="selector" class="Radio-Input" type="radio" value="no" required>
+                        <span class="Radio-Text">NO</span>
+                    </label>
+                </li>
+            </ul>
+              <input type="submit" value="next" class="btn btn--orange btn--cubic btn--shadow">
+            <!-- <ul>
+                <li><input type="radio" name="selector" class="_radio" value="yes" required><label for="yes">Yes</label></li>
+                <li><input type="radio" name="selector" class="_radio" value="no" required><label for="no">NO</label></li>
+                <li><input type="submit" value="next" class="nxt"></li>
+            </ul> -->
+        </div>
+
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,90 @@
+/* global-parts
+-------------------- */
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+  
+
+.wrapper {
+    width: 100%;
+    background-color: seashell;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.index {
+    height: 100vh;
+}
+.ttl {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:"UD デジタル 教科書体 N-R", "BIZ UDゴシック Regular", "Hiragino Kaku Gothic ProN", "ascii";
+    padding: 2rem 0;
+}
+.number-container {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-container {
+    text-align: center;
+}
+
+.each-number {
+    font-size: 2.4rem;
+    padding-right: 4px;
+    color: orange;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive, sans-serif;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.your_number {
+    font-size: 10.6rem;
+    color: orange;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive, sans-serif;
+    background-color: aliceblue;
+    border-radius: 50%;
+    position: relative;
+    margin: 2.0rem 0;
+}
+
+.your_number-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: seashell;
+}

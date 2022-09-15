@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block head %}
+<title></title>
+{% endblock %}
+{% block body %}
+    <div class="wrapper index">
+        <h1 class="ttl">1 から 31 までの数字を1つ思い浮かべて下さい</h1>
+        <a href="{{ url_for('choice',key=0) }}" class="btn btn--orange btn--cubic btn--shadow">NEXT</a>
+    </div>
+{% endblock %}
