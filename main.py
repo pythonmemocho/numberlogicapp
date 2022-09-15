@@ -2,7 +2,7 @@ import random
 
 from flask import Flask, render_template, request, redirect, url_for
 
-from _class import Number, NumbersBord
+from _python._class import Number, NumbersBord
 
 app = Flask(__name__)
 
